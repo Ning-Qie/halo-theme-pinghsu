@@ -127,6 +127,6 @@ sns:
       label: GitHub 链接
       type: text
     twitter:
-      name: twitter
-      label: Twitter 链接
+      name: douban
+      label: 豆瓣链接
       type: text

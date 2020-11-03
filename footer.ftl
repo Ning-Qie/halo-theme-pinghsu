@@ -4,17 +4,16 @@
 		<div class="footer-container clearfix">
 			<div class="social-list">
                 <#if settings.weibo??>
-                    <a class="social weibo" target="blank" href="${settings.weibo!}">WEIBO</a>
+                    <a class="social weibo" target="blank" href="${settings.weibo!}">微博</a>
                 </#if>
                 <#if settings.zhihu??>
-                    <a class="social zhihu" target="blank" href="${settings.zhihu!}">ZHIHU</a>
-                </#if>
-                    <a class="social rss" target="blank" href="${context!}/feed/">RSS</a>
-                <#if settings.github??>
-				    <a class="social github" target="blank" href="${settings.github!}">GITHUB</a>
+                    <a class="social zhihu" target="blank" href="${settings.zhihu!}">知乎</a>
                 </#if>
                 <#if settings.twitter??>
-                    <a class="social twitter" target="blank" href="${settings.twitter!}">TWITTER</a>
+                    <a class="social twitter" target="blank" href="${settings.twitter!}">豆瓣</a>
+                </#if>
+                <#if settings.github??>
+				    <a class="social github" target="blank" href="${settings.github!}">GITHUB</a>
                 </#if>
 			</div>
 		</div>
@@ -31,7 +30,6 @@
                         </#if>
                     </a>
 					<div class="info-text">
-                    	<p>Theme is <a href="https://github.com/chakhsu/pinghsu" target="_blank">Pinghsu</a> by <a href="https://www.linpx.com/" target="_blank">Chakhsu</a></p>
 						<p>Powered by <a href="https://halo.run" target="_blank" rel="nofollow">Halo</a></p>
 						<p>&copy; ${.now?string("yyyy")} <a href="${blog_url!}">${blog_title!}</a></p>
                         <p><@global.footer /></p>
